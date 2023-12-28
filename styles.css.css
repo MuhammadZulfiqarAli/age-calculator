@@ -1,0 +1,138 @@
+*{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+}
+body {     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 550px;
+background-color: hwb(0 25% 75% / 0.74);
+}
+.calculator-box{
+      background-color: rgb(24, 216, 24);
+      width: 60%;
+      height: 500px;
+      border: 1px solid  black;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0  10px 0 white;
+}
+.header {
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 30px;
+}
+  label{
+      display: block;
+      font-size: larger;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #ffffff;
+      margin-top: 10px;
+}
+.dob-date{
+       margin-top: 15px;
+       font-size: 1.5rem;
+       width:350px ;
+       border-radius: 5px;
+       height: 45px;
+       margin-bottom: 20px;
+       box-shadow: 0 0  5px 0 black;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dob-date:hover {
+      background-color: rgb(223, 78, 78);
+}
+.btn-calculator {
+      margin-top: 5px;
+      font-size: 1.5rem;
+      width:350px ;
+      border-radius: 5px;
+      height: 45px;
+      margin-bottom: 15px;
+      background-color: black;
+      color: white;
+      border: none;
+
+      box-shadow: 0 0  15px 0 white;
+}
+.btn-calculator:hover {
+      background-color: rgb(41, 39, 39);
+}
+.age-container {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 30px;
+margin-bottom: 20px;
+}
+ .age{
+ height: 90px;
+width: 220px;
+border: 1px solid rgb(19, 8, 8);
+border-radius: 06px;
+font-size: 1rem;
+font-family:  Tahoma, Geneva, Verdana, sans-serif;
+background-color: white;
+
+ }
+ .days{
+      height: 90px;
+      width: 220px;
+      border: 1px solid black;
+      border-radius: 06px;
+      background-color: white;
+      text-align: center;
+      font-size: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .hours{
+      height: 90px;
+      width: 220px;
+      border: 1px solid black;
+      border-radius: 06px;
+      background-color: white;
+      font-size: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .age-container2{
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 30px;
+margin-bottom: 20px;
+
+ }
+ .minutes{
+      height: 90px;
+      width: 220px;
+border: 1px solid black;
+border-radius: 06px;
+background-color: white;
+font-size: 1rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ }
+ .seconds{
+      height: 90px;
+      width: 220px;
+border: 1px solid black;
+border-radius: 06px ;
+background-color: white;
+font-size: 1rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .milliSecond{
+      height: 90px;
+      width: 220px;
+border: 1px solid black;
+border-radius: 06px;
+background-color: white;
+font-size: 1rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }

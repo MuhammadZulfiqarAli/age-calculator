@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>my age calculator</title>
+      <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+      <div class="calculator-box">
+            <div class="header "> Age Calculator </div>
+            <div class="birth-date">
+                  <label> Select Your Birth Date </label>
+                  <input type="date" class="dob-date">
+            </div>
+            <div class="butten-claculator">
+                  <button class="btn-calculator">  Calculate age </button>
+            </div>
+            <div class="age-container">         
+            <div class="age">Age  </div> 
+            <div class="days">Days</div>
+            <div class="hours">Hours</div>
+      </div>
+                 <div class="age-container2">
+            <div class="minutes">Minutes</div>
+            <div class="seconds">Second</div>
+            <div class="milliSecond">Millisecond</div>
+      </div>
+      <script>
+            const dob_date = document.querySelector(".dob-date")
+            const btn_calculator = document.querySelector(".btn-calculator  ")
+            const ageElement = document.querySelector  (".age");
+            const days = document.querySelector(".days")
+            const hours = document.querySelector(".hours")
+            const  minutes =document.querySelector(".minutes")
+            const  second =document.querySelector(".seconds")
+            const  milliSecond =document.querySelector(".milliSecond")
+            btn_calculator.addEventListener("click", ( ) => {  
+                    if (dob_date.value == "") { 
+                        alert("Enter your  birth date")
+                  } else {
+                        console.log(dob_date.value)
+                        // current age 
+                        const now = new Date(dob_date.value)
+                        const year = now.getFullYear(dob_date.value)
+                        const now_date = new Date()
+                        const now_year = now_date.getFullYear()
+                        const current_Age = now_year - year
+                        console.log(current_Age);
+
+                        //      Calculate days lived        
+                        const millisecond = 1000 * 60 * 60 * 24
+                        const current_days = (now_date - now) / millisecond
+                        console.log(" DAYS is " + Math.floor(current_days) + " <br>");
+
+                        //      Calculate hours lived        
+                        const millisecond1 = 1000 * 60 * 60
+                        const current_hours = (now_date - now) / millisecond1
+                        console.log(" DAYS is " + Math.floor(current_hours) + " <br>");
+
+                                  //      Calculate minutes lived        
+                        const millisecond2 = 1000 * 60 
+                        const current_minutes = (now_date - now) / millisecond2
+                        console.log(" DAYS is " + Math.floor(current_minutes) + " <br>");
+                                            //      Calculate seconds lived   
+                         const millisecond3 = 1000 
+                        const current_second = (now_date - now) / millisecond3 
+                        console.log( Math.floor(current_second) );   
+                                                     // calculate millisecond lived  //
+                            const current_milliSecond = now_date - now
+                        console.log( Math.round(current_milliSecond)  ); 
+                                                                          
+                        ageElement.innerHTML = current_Age  +  "years old";
+                        days.innerHTML = `Your days lived is: ${Math.floor(current_days)} days`;
+                        hours.innerHTML = `Your hours lived is: ${Math.floor(current_hours)} hours`;
+                        minutes.innerHTML= `Your minutes lived is: ${Math.floor(current_minutes)} minutes`;
+                        second.innerHTML= `Your seconds lived is: ${Math.floor(current_second)} seconds`;
+                        milliSecond.innerHTML= `Your milliseconds lived is: ${Math.floor(current_milliSecond)}milliSeconds`;
+                  }
+            })
+
+
+
+      </script>
+</body>
+
+</html>
